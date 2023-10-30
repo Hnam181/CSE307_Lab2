@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <style>
+        .regis{
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+            border: 2px solid blue;
+        }
+        .regBut{
+            margin-left: 35%;
+        }
+        #name{
+            margin-left: 10px;
+        }
+        #day{
+            margin-left: 7px;
+        }
+        #male{
+            margin-left: 18px;
+        }
+        #address{
+            margin-left: 27px;
+        }
+        #phone{
+            margin-left: 3px;
+        }
+        #email{
+            margin-left: 35px;
+        }
+        #pass{
+            margin-left: 57px;
+        }
+        #user{
+            margin-left: 24px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="regis">
+        <form action="#" name="register" method="post">
+            <h3><center>ĐĂNG KÝ THÀNH VIÊN</center></h3>
+            <fieldset>
+                <legend><b>Thông tin cá nhân</b></legend>
+                <label for="name">Họ và tên: </label>
+                <input type="text" name="name" id="name" size="30">
+                <br>
+                <span>
+                    <label for="date">Ngày sinh:</label>
+                
+                    <select name="day" id="day">
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <label for="month">Tháng</label>
+                    <select name="" id="month">
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select> 
+                    <label for="year">Năm</label>
+                    <input type="text" name="" id="year"size=6>
+                </span>
+                <br>
+                <label>Giới tính</label>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Nam</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Nữ</label>
+                <br>
+                <label for="Address" style="height: 20px;">Địa chỉ:</label><textarea name="Address" id="Address" cols="30" rows="4"></textarea>
+                <br>
+                <label for="phone">Điện thoại:</label>
+                <input type="text" name="phone" id="phone">
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="" id="email">  
+            </fieldset>
+            <fieldset>
+                <legend><b>Thông tin đăng nhập</b></legend>
+                <label for="user">Tên đăng nhập: </label>
+                <input type="text" name="user" id="user">
+                <br>
+                <label for="pass">Mật khẩu: </label>
+                <input type="text" name="pass" id="pass">
+                <br>
+                <label for="againpass">Nhập lại mật khẩu: </label>
+                <input type="text" name="againpass" id="againpass">
+            </fieldset>
+        </form>
+        <div class="regBut">
+            <input type="submit" value="Đăng ký">
+            <input type="submit" value="Huỷ">
+        </div>
+    </div>
+</body>
+</html>
